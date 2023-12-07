@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./models/productModel");
-
+require("dotenv").config();
 const app = express();
 
 app.use(express.json());
@@ -74,13 +74,12 @@ app.post("/api/v1/products", async (req, res) => {
 });
 
 mongoose.set("strictQuery", false);
+const { MONGODB_CONNECT_URL, PORT } = process.env;
 mongoose
-  .connect(
-    "mongodb+srv://vtlamdev:TD9lyBWC7XNSlvJJ@cluster0.wu1vio6.mongodb.net/G-SNEAKER-API?retryWrites=true&w=majority"
-  )
+  .connect(MONGODB_CONNECT_URL)
   .then(() => {
     console.log("connected to mongodbs");
-    app.listen(8080, () => {
+    app.listen(PORT, () => {
       console.log(`Node API app is running on port 8080`);
     });
   })
