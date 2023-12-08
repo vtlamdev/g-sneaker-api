@@ -8,6 +8,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //routes
+app.get("/", (req, res) => {
+  const hpptContent = `<p>Please read file Readme in <a href="https://github.com/vtlamdev/g-sneaker-api">github</a> and using POSTMAN to check these APIs</p>`;
+  res.send(hpptContent);
+});
 app.get("/api/v1/products", async (req, res) => {
   // get all products
   try {
