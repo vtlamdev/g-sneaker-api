@@ -4,13 +4,13 @@
 
 [][https://g-sneaker-api.vercel.app/]
 
-*USE POSTMAN TO CHECK THESE APIS*
+# *USE POSTMAN TO CHECK THESE APIS*
 
-# GET [][https://g-sneaker-api.vercel.app/api/v1/products]: Get all products
+- GET [][https://g-sneaker-api.vercel.app/api/v1/products]: Get all products
 
-# GET [][https://g-sneaker-api.vercel.app/api/v1/products/10]: Get a product by id (here id=10)
+- GET [][https://g-sneaker-api.vercel.app/api/v1/products/10]: Get a product by id (here id=10)
 
-# POST [][https://g-sneaker-api.vercel.app/api/v1/products]: Create a new product and add (you can use example body below)
+- POST [][https://g-sneaker-api.vercel.app/api/v1/products]: Create a new product and add (you can use example body below)
 
 ```json
 {
@@ -23,6 +23,6 @@
 }
 ```
 
-# PUT [][https://g-sneaker-api.vercel.app/api/v1/products/10]: Update a product by id (here id=10)
+- PUT [][https://g-sneaker-api.vercel.app/api/v1/products/10]: Update a product by id (here id=10)
 
-# DELETE [][https://g-sneaker-api.vercel.app/api/v1/products/10]: Delete a product by id (here id=10)
+- DELETE [][https://g-sneaker-api.vercel.app/api/v1/products/10]: Delete a product by id (here id=10)
