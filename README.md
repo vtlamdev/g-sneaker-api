@@ -4,7 +4,7 @@
 
 [][https://g-sneaker-api.vercel.app/]
 
-# *USE POSTMAN TO CHECK THESE APIS*
+# *use POSTMAN to check these APIs*
 
 - GET [][https://g-sneaker-api.vercel.app/api/v1/products]: Get all products
 
